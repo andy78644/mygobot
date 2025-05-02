@@ -59,7 +59,7 @@ app.post('/webhook', async (c) => {
     
     // Search for matches in the data
     const fuse = new Fuse(data, {
-      threshold: 0.4, // A lower threshold means a more exact match
+      threshold: 0.5, // A lower threshold means a more exact match
       ignoreLocation: true,
       includeScore: true
     });
